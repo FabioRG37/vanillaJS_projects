@@ -1,9 +1,28 @@
 body {
   background: #efefbb;
-  background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+  background: linear-gradient(
+    45deg,
+    #f4f4f4,
+    #fddfdf,
+    #defde0,
+    #fcf7de,
+    #def3fd,
+    #f4e7da,
+    #d5d5d4,
+    #fceaff,
+    #98d7a5,
+    #f8d5a3,
+    #97b3e6,
+    #eaeda1,
+    #f5f5f5,
+    #e6e0d4,
+    #f5f5f5
+  );
+  background-size: 200% 200%;
   color: white;
   margin: 0;
   font-family: rubik;
+  animation: colors 15s ease infinite;
 }
 
 .container {
@@ -23,6 +42,10 @@ h1 {
   padding-inline-start: 0;
 }
 
+.title {
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
 .card {
   list-style: none;
   padding: 40px;
@@ -30,6 +53,7 @@ h1 {
   text-align: center;
   border-radius: 20px;
   position: relative;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.4);
 }
 
 .card::after {
@@ -146,5 +170,17 @@ h1 {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
