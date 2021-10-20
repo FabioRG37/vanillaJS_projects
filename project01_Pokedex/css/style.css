@@ -21,7 +21,7 @@ body {
   background-size: 200% 200%;
   color: white;
   margin: 0;
-  font-family: rubik;
+  font-family: rubik, monospace;
   animation: colors 15s ease infinite;
 }
 
